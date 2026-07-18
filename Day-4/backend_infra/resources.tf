@@ -3,6 +3,7 @@
 
 resource "aws_s3_bucket" "state" {
   bucket = var.state_bucket_name
+  force_destroy = true # <--- Add this line
 
   tags = {
     Name = var.state_bucket_name

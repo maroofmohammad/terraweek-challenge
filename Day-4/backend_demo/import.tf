@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "backup_bucket" {
+resource "aws_s3_bucket" "imported" {
 }
 
 import {
